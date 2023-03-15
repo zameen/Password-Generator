@@ -1,0 +1,96 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 25);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    height: auto;
+    width: auto;
+}
+#head{
+    color: gray;
+    text-align: center;
+}
+#box{
+    height: auto;
+    width: 580px;
+}
+#checkBox{
+    width: 90%;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+#disp{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #24232C;
+    border-radius: 5px;
+    color: white;
+}
+.fa-regular{
+    color: #8cff9c;
+    font-size: 25px;
+}
+#options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24232C;
+    margin-top: 50px;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+#len{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ckbox{
+    margin: 15px;
+    height: 20px;
+    width: 20px;
+}
+.smallBox{
+    border: 1px solid white;
+    width: 10px;
+    height: 30px;
+    margin: 3px;
+}
+#strength{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 86%;
+    background-color: rgb(0, 0, 0);
+    color: gray;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 30px;
+    height: 50px;
+}
+#generate{
+    height: 70px;
+    width: 90%;
+    background-color: #8cff9c;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+#rang{
+    margin: 30px;
+}
+#rangeLength{
+    color: #8cff9c;
+    margin: 0px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Password</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/ec059f65fb.js" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+        <div id="container">
+            <h2 id="head">Password Generator</h2>
+
+
+            <div id="box">
+                <div id="disp">
+                    <h1 id="psw"></h1>
+                    <i id="cpy" class="fa-regular fa-copy" onclick="copyFunc()"></i>
+                </div>
+
+
+                <div id="options">
+                    <div id="len">
+                        <b>Character Length</b> <h1 id="rangeLength">8</h1>
+                    </div>
+                    <input type="range" id="rang" min="6" max="16" value="8" style="width: 90%;" oninput="range()"/>
+
+                    <div id="checkBox">
+                        <input class="ckbox" id="one" type="checkbox" value="" />
+                        <label>Include Uppercase Letters</label><br>
+                        <input class="ckbox" id="two" type="checkbox" value="" />
+                        <label>Include Lowercase Letters</label><br>
+                        <input class="ckbox" id="tri" type="checkbox" value="" />
+                        <label>Include Numbers</label><br>
+                        <input class="ckbox" id="four" type="checkbox" value="" />
+                        <label>Include Symbols</label>
+                    </div>
+
+                    <div id="strength">
+                        <b id="str">STRENGTH</b>
+                        <div id="boxes" style="display: flex; align-items: center;"> 
+                            <strong style="margin-right: 15px;"><h2 id="strong" style="color: white;" ></h2></strong>
+                            <div class="smallBox" id="smallOne"></div>
+                            <div class="smallBox" id="smallTwo"></div>
+                            <div class="smallBox" id="smallTri"></div>
+                            <div class="smallBox" id="smallFour"></div>
+                        </div>
+                    </div>
+                    <button id="generate" onclick="generating()">GENERATE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
